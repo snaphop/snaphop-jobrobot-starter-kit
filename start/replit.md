@@ -31,7 +31,8 @@ Fix every problem it reports, by file and line, and run it again. Do not stop un
 rules to fit the design, and do not move the package out of `package/`.
 ````
 
-The project needs a Java runtime for this; install one with Replit's package tools if `java` is missing. The
+The project needs Java 25 or later for this; install it with Replit's package tools if `java -version` shows an older
+one, because an older Java cannot load the jar and exits 1, which reads as problems with the package. The
 accessibility half of `check` needs Chromium and is left to the machine you pack on.
 
 ## Upload

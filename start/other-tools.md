@@ -16,7 +16,8 @@ works in one works in all of them.
 
 ## If the tool can run commands
 
-Copy `site-package-tool.jar` into the project and tell the tool to run, after each change,
+Copy `site-package-tool.jar` into the project, make sure it has Java 25 or later (an older Java cannot load the jar
+and exits 1, which reads as problems with the package), and tell the tool to run, after each change,
 
 ```sh
 java -jar site-package-tool.jar check package --no-browser --json
@@ -40,7 +41,7 @@ java -jar site-package-tool.jar convert my-export my-package --hostname https://
 ```
 
 Paste every line of either report back into the tool and export again. No tool has needed more than two rounds so
-far, and three is the most we allow for; if it takes more,
+far, and three is the most we allow; if it takes more,
 the brief is what to look at, so tell us what the tool kept getting wrong.
 
 When `check` passes without `--no-browser` as well, `pack` writes the ZIP to upload from the Site package route of
