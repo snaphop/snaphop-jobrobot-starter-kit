@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 56" width="260" height="56" role="img" aria-label="Riverside Care">
+  <circle cx="26" cy="28" r="22" fill="#1f4d3a"/>
+  <path d="M26 12 C34 20 34 36 26 44 C18 36 18 20 26 12 Z" fill="#e9c46a"/>
+  <line x1="26" y1="16" x2="26" y2="44" stroke="#1f4d3a" stroke-width="2"/>
+  <text x="58" y="37" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="600" fill="#1f4d3a">Riverside Care</text>
+</svg>

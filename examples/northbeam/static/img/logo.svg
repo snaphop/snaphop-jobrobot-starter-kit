@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" role="img" aria-label="Harbour Care">
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="#ef7650"/>
+  <path d="M12 30 L20 14 L28 30 Z" fill="#14213d"/>
+  <rect x="17" y="30" width="6" height="6" fill="#14213d"/>
+  <text x="52" y="32" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Harbour Care</text>
+</svg>

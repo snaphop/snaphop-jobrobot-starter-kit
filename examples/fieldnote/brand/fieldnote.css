@@ -1,0 +1,114 @@
+@font-face { font-family: "Fraunces"; src: url("fonts/fraunces-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/source-sans-3-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("fonts/source-sans-3-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --forest: #1f4d3a;
+  --forest-dark: #163829;
+  --moss: #4f7c5f;
+  --ochre: #e9c46a;
+  --clay: #8a4b12;
+  --cream: #f6f1e7;
+  --sheet: #fffdf8;
+  --text: #22302a;
+  --muted: #4b5a52;
+  --rule: #d9cdb4;
+  --measure: 46rem;
+  --wide: 68rem;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--cream); color: var(--text); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 1.125rem; line-height: 1.65; }
+img { max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 600; color: var(--forest); line-height: 1.2; }
+h1 { font-size: 2.4rem; margin: 0.25rem 0 1rem; }
+h2 { font-size: 1.65rem; margin: 2rem 0 0.75rem; }
+h3 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+a { color: var(--forest); text-decoration-thickness: 2px; text-underline-offset: 0.18em; text-decoration-color: var(--moss); }
+a:hover { color: var(--clay); text-decoration-color: var(--clay); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
+
+.fn-skip { position: absolute; left: 1rem; top: -4rem; background: var(--sheet); color: var(--forest); padding: 0.6rem 1rem; z-index: 10; border: 2px solid var(--forest); }
+.fn-skip:focus { top: 1rem; }
+
+.fn-topbar { background: var(--forest); color: #f6f1e7; font-size: 0.95rem; text-align: center; padding: 0.4rem 1rem; }
+.fn-topbar p { margin: 0; }
+.fn-topbar a { color: #ffffff; text-decoration-color: var(--ochre); }
+.fn-topbar a:hover { color: var(--ochre); }
+
+.fn-masthead { border-bottom: 1px solid var(--rule); background: var(--sheet); }
+.fn-masthead__inner { max-width: var(--wide); margin: 0 auto; padding: 1.25rem 1.25rem 0.75rem; text-align: center; }
+.fn-wordmark { display: inline-block; }
+.fn-wordmark img { display: block; width: 240px; height: auto; margin: 0 auto; }
+.fn-nav ul { list-style: none; margin: 0.75rem 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.75rem; }
+.fn-nav a { color: var(--text); text-decoration: none; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.9rem; padding: 0.35rem 0; border-bottom: 2px solid transparent; }
+.fn-nav a:hover, .fn-nav a[aria-current="page"] { color: var(--forest); border-bottom-color: var(--ochre); }
+
+.fn-page { max-width: var(--measure); margin: 0 auto; padding: 2.5rem 1.25rem 4rem; overflow-wrap: anywhere; }
+.fn-page main > h1 + p { color: var(--muted); font-style: italic; }
+
+/* Listing, as an index of roles */
+.fn-page main > article { border-top: 1px solid var(--rule); padding: 1.25rem 0; display: grid; gap: 0.1rem; }
+.fn-page main > article:last-of-type { border-bottom: 1px solid var(--rule); }
+.fn-page main > article h2 { font-size: 1.4rem; margin: 0 0 0.3rem; }
+.fn-page main > article h2 a { text-decoration: none; }
+.fn-page main > article h2 a:hover { text-decoration: underline; }
+.fn-page main > article p { margin: 0; color: var(--muted); }
+.fn-page main > article time { font-size: 0.95rem; color: var(--muted); }
+.fn-page main > nav { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; margin-top: 1.75rem; font-style: italic; }
+
+/* Job page */
+.fn-page main > a:first-child { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.fn-page main ul, .fn-page main ol { padding-left: 1.3rem; }
+.fn-page main table { border-collapse: collapse; display: block; overflow-x: auto; }
+.fn-page .button, .fn-button { display: inline-block; background: var(--forest); color: #ffffff; text-decoration: none; font-weight: 600; letter-spacing: 0.03em; padding: 0.8rem 1.8rem; border-radius: 4px; margin: 1.5rem 0 0.5rem; box-shadow: 4px 4px 0 var(--ochre); }
+.fn-page .button:hover, .fn-button:hover { background: var(--forest-dark); color: #ffffff; }
+
+/* Apply form */
+.fn-page form { background: var(--sheet); border: 1px solid var(--rule); padding: 1.5rem; }
+.fn-page label { display: block; font-weight: 600; margin: 1rem 0 0.3rem; }
+.fn-page fieldset { border: 1px solid var(--rule); margin: 1rem 0; padding: 0.75rem 1rem 1rem; }
+.fn-page legend { font-family: "Fraunces", Georgia, serif; color: var(--forest); font-size: 1.1rem; padding: 0 0.35rem; }
+.fn-page fieldset label { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 400; margin: 0.25rem 1.25rem 0.25rem 0; }
+.fn-page input:not([type="radio"]):not([type="checkbox"]), .fn-page select, .fn-page textarea { width: 100%; max-width: 100%; font: inherit; color: var(--text); background: #ffffff; border: 1px solid #7d8a80; border-bottom: 2px solid var(--forest); padding: 0.6rem 0.75rem; border-radius: 2px; }
+.fn-page textarea { min-height: 8rem; }
+.fn-page input[aria-invalid="true"], .fn-page select[aria-invalid="true"], .fn-page textarea[aria-invalid="true"] { border-color: var(--clay); }
+.fn-page button { font: inherit; font-weight: 600; background: var(--forest); color: #ffffff; border: 0; border-radius: 4px; padding: 0.7rem 1.4rem; margin: 1rem 0.5rem 0 0; cursor: pointer; }
+.fn-page button:hover { background: var(--forest-dark); }
+.fn-page button[type="button"] { background: var(--sheet); color: var(--forest); border: 2px solid var(--forest); }
+.fn-page [role="alert"] { color: var(--clay); font-weight: 600; }
+#form-errors:not(:empty) { border-left: 5px solid var(--clay); background: #fbeee0; padding: 0.75rem 1rem; }
+
+/* Content pages */
+.fn-kicker { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 600; color: var(--clay); margin: 0; }
+.fn-standfirst { font-size: 1.3rem; color: var(--muted); font-style: italic; }
+.fn-figure { margin: 0 0 2rem; }
+.fn-figure img { display: block; width: 100%; border-radius: 6px; }
+.fn-pullquote { margin: 2.5rem 0; padding: 1.5rem 1.75rem; background: var(--sheet); border-left: 6px solid var(--ochre); }
+.fn-pullquote p { font-family: "Fraunces", Georgia, serif; font-size: 1.45rem; color: var(--forest); line-height: 1.35; margin: 0 0 0.5rem; }
+.fn-pullquote footer { font-size: 1rem; color: var(--muted); }
+.fn-list { list-style: none; padding: 0 !important; margin: 1rem 0 2rem; }
+.fn-list li { border-top: 1px solid var(--rule); padding: 1rem 0; }
+.fn-list li p { margin: 0; color: var(--muted); }
+.fn-steps { counter-reset: step; list-style: none; padding: 0 !important; }
+.fn-steps li { counter-increment: step; position: relative; padding: 0 0 1.5rem 3.5rem; }
+.fn-steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--forest); color: #ffffff; font-family: "Fraunces", Georgia, serif; display: flex; align-items: center; justify-content: center; }
+.fn-steps li p { margin: 0; color: var(--muted); }
+.fn-invite { text-align: center; border-top: 1px solid var(--rule); margin-top: 3rem; padding-top: 2rem; }
+
+.fn-footer { background: var(--forest); color: #e7efe9; }
+.fn-footer__inner { max-width: var(--wide); margin: 0 auto; padding: 2.25rem 1.25rem; display: flex; flex-wrap: wrap; gap: 1rem 3rem; justify-content: space-between; }
+.fn-footer p { margin: 0.2rem 0; }
+.fn-footer a { color: #ffffff; text-decoration-color: var(--ochre); }
+.fn-footer a:hover { color: var(--ochre); }
+.fn-footer ul { list-style: none; margin: 0; padding: 0; }
+.fn-footer .fn-footer__name { font-family: "Fraunces", Georgia, serif; font-size: 1.3rem; color: #ffffff; }
+
+@media (min-width: 48rem) {
+  h1 { font-size: 3rem; }
+  .fn-wordmark img { width: 280px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
+.fn-steps li h2 { margin: 0 0 0.35rem; font-size: 1.35rem; padding-top: 0.25rem; }
+.fn-page main > .button { display: block; width: fit-content; margin-top: 2rem; }

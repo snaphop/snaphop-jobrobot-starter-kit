@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}} | {{company}}</title>
+<link rel="icon" href="/static/img/favicon.svg">
+<link rel="stylesheet" href="/static/site.css">
+{{head}}
+</head>
+<body>
+<a class="skip" href="#page-content">Skip to content</a>
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="https://careers.example.com/"><img src="/static/img/logo.svg" alt="{{company}} home" width="160" height="40"></a>
+    <nav class="site-nav" aria-label="Site">
+      <ul>
+        <li><a href="https://careers.example.com/about/">About us</a></li>
+        <li><a href="https://careers.example.com/jobs/locations/">By location</a></li>
+        <li><a href="https://careers.example.com/jobs/categories/">By category</a></li>
+        <li><a class="site-nav__cta" href="https://careers.example.com/jobs/">Open roles</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="wrap page" id="page-content">
+{{content}}
+</div>
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p><strong>{{company}}</strong></p>
+    <ul>
+      <li><a href="https://careers.example.com/jobs/">All jobs</a></li>
+      <li><a href="https://careers.example.com/about/">About us</a></li>
+      <li><a href="https://careers-apply.example.com/assist/">Ask about our roles</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
