@@ -46,3 +46,14 @@ the brief is what to look at, so tell us what the tool kept getting wrong.
 
 When `check` passes without `--no-browser` as well, `pack` writes the ZIP to upload from the Site package route of
 the management plane.
+
+## Rounds recorded
+
+| Date | Tool | Brief | What came out | Rounds to pass |
+|---|---|---|---|---|
+| 2026-10-11 | Lovable | yes | A package in a folder of its own, beside Lovable's own preview app | 1 |
+
+The 2026-10-11 run was driven by an agent through Lovable's MCP server, from this page alone: the brief as the
+workspace's knowledge, the starter's layout and stylesheet pasted into the first message, the hostname and the
+brand. Lovable cannot run the checker, and nothing had to be pasted back: its first export passed `check` and the
+accessibility gate. Each run adds a row here, and its export is kept as a test case.
