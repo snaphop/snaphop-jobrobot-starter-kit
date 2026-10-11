@@ -7,10 +7,9 @@ says only how the agent gets them into Claude Design and what its downloads need
 
 ## Which Claude Design
 
-Claude Design has moved into Claude, where a design is an artifact of Claude's Design type. The standalone version
-at claude.ai/design closes on 14 December 2026
+Claude Design is Claude's Design type: a design is an artifact in Claude. This page covers only that. The standalone
+version at claude.ai/design is not supported, and closes on 14 December 2026
 ([Anthropic's migration guide](https://support.claude.com/en/articles/17440474-migrate-from-standalone-claude-design-to-claude)).
-Start every site in Claude.
 
 ## Start the design
 
@@ -60,16 +59,13 @@ the site's branding to activate it: what goes live on an employer's hostname is 
 
 ## Rounds recorded
 
-| Date | Where | Brief | What came out | Rounds to pass |
-|---|---|---|---|---|
-| 2026-09-18 | Standalone | yes | A package one folder down, every page missing `<title>` | 1 expected; round 2 not run |
-| 2026-09-18 | Standalone | no | A design canvas, no `index.html` | Not run past round 1 |
-| 2026-10-11 | Claude | yes | A package beside the design's boards in `project/`, refused for the boards | 3: the package moved to `project/site/` |
-| 2026-10-11 | Claude | no | A design canvas; then a static site written by hand beside it | 3: links made root-relative, web fonts dropped |
+| Date | Brief | What came out | Rounds to pass |
+|---|---|---|---|
+| 2026-10-11 | yes | A package beside the design's boards in `project/`, refused for the boards | 3: the package moved to `project/site/` |
+| 2026-10-11 | no | A design canvas; then a static site written by hand beside it | 3: links made root-relative, web fonts dropped |
 
-The 2026-09-18 runs were a person's, in the standalone version; they did not use this page, and their exports were
-not kept. The 2026-10-11 runs were driven by agents: one built each design in Claude's Design type, from the brief
-and the starter or from the request alone, and another ran the tool on each download and gave every report back
-verbatim. Both passed `check` and the accessibility gate in their third round, and every round's export is kept as
-a test case. `convert` now answers each of those downloads from its root with the step that run needed, so a run
-with this page is expected to take fewer rounds; each run adds a row here.
+The 2026-10-11 runs were driven by agents: one built each design in Claude's Design type, from the brief and the
+starter or from the request alone, and another ran the tool on each download and gave every report back verbatim.
+Both passed `check` and the accessibility gate in their third round, and every round's export is kept as a test
+case. `convert` now answers each of those downloads from its root with the step that run needed, so a run with this
+page is expected to take fewer rounds; each run adds a row here.
