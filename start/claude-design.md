@@ -38,7 +38,10 @@ Download the design's files untouched:
 - **In the standalone version**, until 14 December 2026: Share, then **Project HTML** with **Project archive**
   selected, which downloads a ZIP of every file in the project. Do not choose **Standalone HTML**, which is one file
   rather than a site.
-- **In Claude**: not yet recorded. Download every file of the design as they are, not a single bundled HTML file.
+- **In Claude**: not yet recorded from a person's run. Download every file of the design as they are, not a single
+  bundled HTML file. In the stand-in run below, the design's files sat in a `project/` folder beside its boards
+  (`*.dc.html`) and `canvas.json`, so run `convert` on `project/`, not on the download as a whole: on the whole
+  download it says only that there is no `index.html`.
 
 Unzip the result untouched. Run `convert` on it first, because it recognises Claude Design's known export shapes
 and `check` does not:
@@ -70,6 +73,10 @@ writes the ZIP to upload from the Site package route of the management plane.
 |---|---|---|---|---|
 | 2026-09-18 | Standalone | yes | A package one folder down, every page missing `<title>` | 1 expected; round 2 not run |
 | 2026-09-18 | Standalone | no | A design canvas, no `index.html` | Not run past round 1 |
+| 2026-10-11 | Claude, stand-in | yes | A package beside the design's boards in `project/`, refused for the boards | 3: the package moved to `project/site/` |
+| 2026-10-11 | Claude, stand-in | no | A design canvas; then a static site written by hand beside it | 3: links made root-relative, web fonts dropped |
 
-Neither run used this page, and neither export was kept. The first run with it keeps its exports as test cases and
-adds a row here.
+The 2026-09-18 runs did not use this page, and their exports were not kept. The 2026-10-11 runs are a stand-in: a
+Claude agent, not a person in Claude Design, built each design in Claude's Design type, one from the brief and the
+starter and one from the request alone, and every report was pasted back to it verbatim. Both passed `check` and the accessibility gate in their third
+round, and every round's export is kept as a test case. A person's run in Claude adds a row here.
