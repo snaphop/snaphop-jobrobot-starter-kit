@@ -78,5 +78,6 @@ writes the ZIP to upload from the Site package route of the management plane.
 
 The 2026-09-18 runs did not use this page, and their exports were not kept. The 2026-10-11 runs are a stand-in: a
 Claude agent, not a person in Claude Design, built each design in Claude's Design type, one from the brief and the
-starter and one from the request alone, and every report was pasted back to it verbatim. Both passed `check` and the accessibility gate in their third
-round, and every round's export is kept as a test case. A person's run in Claude adds a row here.
+starter and one from the request alone, and every report was pasted back to it verbatim. Both passed `check` and the
+accessibility gate in their third round, and every round's export is kept as a test case. A person's run in Claude
+adds a row here.
