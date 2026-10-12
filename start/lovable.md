@@ -50,9 +50,16 @@ the site's branding to activate it.
 | Date | Brief | What came out | Rounds to pass |
 |---|---|---|---|
 | 2026-10-11 | yes | A package in `acme-careers/`, beside Lovable's own preview app | 1 |
+| 2026-10-12 | yes | A package in `acme-careers/`, beside Lovable's own preview app; one line refused, a checker fault since fixed | 2 |
 
 The 2026-10-11 run was made before this page existed, from [`other-tools.md`](other-tools.md) alone, and driven by an
 agent through Lovable's MCP server: the brief as the workspace's knowledge, the starter's layout and stylesheet pasted
 into the first message, the hostname and the brand. Lovable's agent wrote itself a checker from the brief's rules,
-and nothing had to be pasted back: its first export passed `check` and the accessibility gate. Each run adds a row
-here, and its export is kept as a test case.
+and nothing had to be pasted back: its first export passed `check` and the accessibility gate.
+
+The 2026-10-12 run was the first made from this page, driven the same way, with the same brand and hostname. Lovable's
+agent again checked its own package, at 320 and 1280 pixels, and its first export was refused for one line only:
+`[aria-invalid=true]` in the stylesheet. That selector is valid CSS, and the checker refused it by its own fault,
+since fixed: its CSS parser read `true` and `false` as keywords. Given the line verbatim, Lovable's agent quoted every
+attribute value and changed nothing else, and the second export passed `check` and the accessibility gate. Each run
+adds a row here, and its export is kept as a test case.
