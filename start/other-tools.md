@@ -1,9 +1,13 @@
 # Start in any other design tool
 
-How to build an employer's career site in a design tool no other page here covers -- Lovable, v0, or the next one
--- and upload it as a Job Robot site package. The rules the package is
+How to build an employer's career site in a design tool no other page here covers -- v0, or the next one -- and
+upload it as a Job Robot site package. The rules the package is
 checked against are all in [`BRIEF.md`](../BRIEF.md). Nothing about a tool is special-cased on upload, so what
 works in one works in all of them.
+
+The supported tools are [Claude Design](claude-design.md) and [Lovable](lovable.md), the ones with a page of their
+own. Another tool can still produce a package that passes, since the same checks decide, but no run vouches for it
+and its problems are not ones we fix for it.
 
 ## Before you design
 
@@ -23,7 +27,7 @@ and exits 1, which reads as problems with the package), and tell the tool to run
 java -jar site-package-tool.jar check package --no-browser --json
 ```
 
-and fix every line until it exits 0, as the [Replit page](replit.md) does.
+and fix every line until it exits 0.
 
 ## If it cannot
 
@@ -53,7 +57,7 @@ the management plane.
 |---|---|---|---|---|
 | 2026-10-11 | Lovable | yes | A package in a folder of its own, beside Lovable's own preview app | 1 |
 
-The 2026-10-11 run was driven by an agent through Lovable's MCP server, from this page alone: the brief as the
-workspace's knowledge, the starter's layout and stylesheet pasted into the first message, the hostname and the
-brand. Lovable cannot run the checker, and nothing had to be pasted back: its first export passed `check` and the
-accessibility gate. Each run adds a row here, and its export is kept as a test case.
+The 2026-10-11 run was driven by an agent through Lovable's MCP server, from this page alone, and showed that a tool
+no guide covered could reach a passing package from it: its first export passed `check` and the accessibility gate
+with nothing pasted back. Lovable now has a page of its own, [`lovable.md`](lovable.md), which records its later
+runs. Each run with this page adds a row here, and its export is kept as a test case.

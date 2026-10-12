@@ -1,7 +1,7 @@
 # SnapHop Job Robot starter kit
 
-Everything an agency needs to design an employer's career site in an AI design tool -- Claude Design, Replit,
-Lovable, v0 or any other -- and hand it over as a **site package** for SnapHop Job Robot.
+Everything an agency needs to design an employer's career site in an AI design tool -- Claude Design or
+Lovable, the two supported, or any other -- and hand it over as a **site package** for SnapHop Job Robot.
 
 A site package is a folder of plain HTML, CSS, images and fonts: the frame Job Robot renders its job listing, job
 pages and apply form into, and any pages of your own. You design it; Job Robot generates the job pages and runs the
@@ -13,7 +13,7 @@ application form.
 |---|---|
 | [`BRIEF.md`](BRIEF.md) | The package rules, written as instructions for a design tool. Put it into the tool before you design. |
 | [`starter/`](starter/) | A package that already follows every rule. The fastest route is to restyle a copy of it. |
-| [`start/`](start/) | How to start in [Claude Design](start/claude-design.md), [Replit](start/replit.md) or [any other tool](start/other-tools.md). |
+| [`start/`](start/) | How to start in [Claude Design](start/claude-design.md), [Lovable](start/lovable.md) or [any other tool](start/other-tools.md). |
 | [`examples/`](examples/) | Two finished packages by fictional agencies, `northbeam` and `fieldnote`, to see what a designed site looks like. |
 | [Releases](https://github.com/snaphop/snaphop-jobrobot-starter-kit/releases) | `site-package-tool.jar`, which checks a package on your machine exactly as the upload does. |
 
@@ -21,7 +21,7 @@ application form.
 
 1. **Start** in your tool with the brief and the starter, as the page for that tool in `start/` describes.
 2. **Check** what the tool exports with the site package tool, and paste every line of its report back into the
-   tool until it passes. A tool that can run commands, such as Replit, can run the check itself.
+   tool until it passes. A tool that can run commands can run the check itself.
 3. **Pack** the folder into the ZIP to upload, and upload it from the Site package page of the employer's Job Robot
    workspace. The upload runs the same checks; the employer activates the site once its accessibility check passes.
 
